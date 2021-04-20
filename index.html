@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Supertrunfo</title>
+</head>
+
+<body>
+    <h1>Super Trunfo</h1>
+    <button id="btnSort" onClick="sortPlayerCard();">Take your pill</button>
+    <p style= "display: none" id="chooseAttribute">Choose your weapons</p>
+    <div id="cards-number"></div>
+    <div id="score"></div>
+    <div class="show-cards">
+        <div class="cards" id="player-card" style="display: none;">
+            <div class="photo-player-card"></div>
+            <div class="name" id="name-player-card"></div>
+            <div class="options"></div>
+            <div class="number" id="number-player-card"></div>
+        </div>
+        <div id="result" style="display: none"></div>
+        <div class="cards" id="machine-card" style="display: none;">
+            <div class="photo-machine-card"></div>
+            <div class="name" id="name-machine-card"></div>
+            <div class="attributes"></div>
+            <div class="number" id="number-machine-card"></div>
+        </div>
+    </div>
+    <button id="btnPlay" onClick="play();" style="display: none;">Fight the Machines</button>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
